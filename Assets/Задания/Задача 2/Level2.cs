@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 
 public class Level2 : MonoBehaviour
 {
     private float _speed = 10;
-    
+
+
+
     private void Update()
     {
         var step = Time.deltaTime * _speed;

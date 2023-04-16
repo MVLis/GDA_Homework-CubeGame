@@ -2,15 +2,7 @@ using UnityEngine;
 
 public class Level6 : MonoBehaviour
 {
-    [SerializeField] 
-    private GameObject _obstacle;
-    
-    private float _speed = 15;
-
-    private void Start()
-    {
-        Instantiate(_obstacle);
-    }
+    private float _speed = 10;
 
     private void Update()
     {

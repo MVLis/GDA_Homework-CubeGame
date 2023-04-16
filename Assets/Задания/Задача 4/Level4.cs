@@ -1,9 +1,18 @@
+using System;
 using UnityEngine;
 
 public class Level4 : MonoBehaviour
 {
     public bool UseGravity = true;
     private float _speed = 5;
+
+
+    private void Awake()
+    {
+        var rigidbody = GetComponent<Rigidbody>();
+        UseGravity = false;
+        rigidbody.useGravity = UseGravity;
+    }
 
     private void Update()
     {

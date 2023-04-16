@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Level1 : MonoBehaviour
 {
-    private float _speed = 5;
+    
+    [SerializeField]
+    private float _speed;
     
     private void Update()
     {
